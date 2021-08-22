@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly URL shortening API Challenge</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Link do estilo css -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Google fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- SEO -->
+    <meta name="description" content="Construa o reconhecimento de sua marca e obtenha insights detalhados sobre o desempenho de seus links, Mais do que links Curtos">
+    <meta name="keywords" content="API, Encurtamento, Links, Desempenho, Marca, Engajamento ">
+    <meta name="author" content="Cesar dos Santos de Almeida">
+
+</head>
+<body>
+
+    <!-- Bloqueio de Fundo -->
+    <div class="fundo-congelado"></div>
+    <!-- Bloqueio de Fundo -->
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div>
+            <img class="logo" src="img/logo.svg" alt="Logo da Empresa Shortly">
+        </div>
+        <nav id="navegacao">
+            <ul class="itens-menu-esquerdo">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+            <ul class="itens-menu-direito">
+                <li><a href="#">Login</a></li>
+                <li><a href="#" class="botao-menu">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <a  onclick="menu()"><img src="img/menu.svg" alt="Menu Hamburguer"></a>
+        </div>
+    </header>
+    <!-- Cabeçalho -->
+
+    <!-- Conteudo Principal -->
+    <main id="main">
+
+        <!-- Seção de Conteudo Principal -->
+        <section id="secao-principal" class="container">
+            <div class="coluna" id="conteudo-texto">
+                <h1> More than just shorter links</h1>
+                <div class="conteudo-site">
+                    <p> Build your brand’s recognition and get detailed insights 
+                        on how your links are performing.</p>
+                    <a href="#" class="botao"> Get Started</a>
+                </div>
+            </div>
+            <div class="coluna" id="conteudo-ilustracao">
+                <img class="ilustracao" src="img/illustration-working.svg" alt="Ilusstração do Site">
+            </div>
+            <div style="clear: both;"></div>
+        </section>
+        <!-- Seção de Conteudo Principal -->
+
+        <div class="cor-cinza">
+
+            <!-- Encurtador -->
+            <section id="encurtador" class="container">
+                <div class="caixa-encurtador">
+                    <div class="formulario">
+                        <input class="campo-encurtador"  placeholder="Shorten a link here..." type="text" id="url">
+                        <a class="botao-encurtador" onclick="url()">Shorten It!</a>
+                    </div>
+                    <div class="celula-mensagem">
+                        <p class="mensagem-url"></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Encurtador -->
+            
+            <!-- Links Encurtados -->
+            <section class="links-encurtados">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" id="urlEndereco"></a>
+                        <hr class="divisoria">
+                        <a href="#" target="_blank" id="urlEncurtada"></a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Links Encurtados -->
+
+            <!-- Seção Estatisticas -->
+            <section id="estatistica" class="container">
+
+                <h2>Advanced Statistics</h2>
+                <p> Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+                <div class="cartao">
+                    <div class="icone-cartao">
+                        <img src="img/icon-brand-recognition.svg" alt="Estatisticas de Reconhecimento de Marca">
+                    </div>
+                    <h3>Brand Recognition</h3>
+                    <p>  Boost your brand recognition with each click. Generic links don’t 
+                        mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <hr class="linha-divisoria">
+                <div class="cartao" id="cartao-segundo">
+                    <div class="icone-cartao">
+                        <img src="img/icon-detailed-records.svg" alt="Estatisticas de Registros Detalhados">
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p>  Gain insights into who is clicking your links. Knowing when and where 
+                        people engage with your content helps inform better decisions.</p>
+                </div>
+                <hr class="linha-divisoria">
+
+                <div class="cartao" id="cartao-terceiro">
+                    <div class="icone-cartao">
+                        <img src="img/icon-fully-customizable.svg" alt="Estatisticas de Totalmente personalizável">
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>  Improve brand awareness and content discoverability through customizable 
+                        links, supercharging audience engagement.</p>
+                </div>
+
+            </section>
+            <!-- Seção Estatisticas -->
+
+        </div>
+
+        <!-- Seção Aumente os Seus Links -->
+        <section id="aumento-links">
+            <h4>Boost your links today</h4>
+            <a href="#" class="botao-links">Get Started</a>
+        </section>
+        <!-- Seção Aumente os Seus Links -->
+
+    </main>
+    <!-- Conteudo principal -->
+
+    <!-- Rodape -->
+    <footer>
+        <div class="container">
+            <div class="conteudo-rodape">
+                <div>
+                    <img src="img/logo-rodape.svg" alt="Logo Rodape da Shortly">
+                </div>
+                <div>
+                    <strong>Features</strong>
+                    <p>Link Shortening</p>
+                    <p>Branded Links</p>
+                    <p>Analytics</p>
+                </div>
+                <div>
+                    <strong>Resources</strong>
+                    <p>Blog</p>
+                    <p>Developers</p>
+                    <p>Support</p>
+                </div>
+                <div>
+                    <strong>Company</strong>
+                    <p>About</p>
+                    <p>Our Team</p>
+                    <p>Careers</p>
+                    <p>Contact</p>
+                </div>
+                <div class="grupo-redes-sociais">
+                    <img src="img/icon-facebook.svg" alt="Logo Rodape Facebook">
+                    <img src="img/icon-twitter.svg" alt="Logo Rodape Twitter">
+                    <img src="img/icon-pinterest.svg" alt="Logo Rodape Pinterest">
+                    <img src="img/icon-instagram.svg" alt="Logo Rodape Instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Rodape -->
+    
+    <!-- Loader -->
+    <div class="celula-loader">
+        <div class="loader"></div>
+    </div>
+    <!-- Loader -->
+
+
+    <!-- Script js -->
+    <script src="js/estilo.js"></script>
+
+</body>
+</html>
